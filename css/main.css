@@ -4,8 +4,8 @@ body {
 }
 
 .main {
-  width: 70%;
-  height: 11000px;
+  width: 100%;
+  height: 11200px;
   margin: 0px auto;
   background-color: white;
 }
@@ -35,7 +35,7 @@ body {
   font-style: normal;
   font-weight: normal;
   visibility: visible;
-  font-size: 70px;
+  font-size: 7vw;
   color: rgb(119, 119, 119);
   text-align: center;
 }
