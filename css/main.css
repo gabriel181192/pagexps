@@ -10,7 +10,7 @@ body {
 
 .main {
   width: 70%;
-  height: auto;
+  height: 5000px;
   background-color: white;
   margin: 0px auto;
 }
@@ -29,7 +29,7 @@ body {
 /*  body */
 .body {
   width: 100%;
-  height: 3000px;
+  height: 1200px;
   background-image: url(../images/body.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,6 +136,105 @@ body {
 .informaci > img {
   width: 50%;
 }
+.info-footer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-footer-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-footer-btn > button {
+  background-color: rgb(61, 77, 56);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.info-footer-text {
+  margin-top: 100px;
+  font-family: "Dancing Script", cursive;
+  font-size: 3vw;
+}
+
+.info-footer-tiempo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.info-footer-tiempo > div {
+  margin: 30px;
+}
+.tiempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.tiempo > span {
+  margin-top: 2px;
+  color: rgb(61, 77, 56);
+  font-size: 20px;
+}
+
+.numero {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(61, 77, 56);
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-size: 30px;
+}
+
+footer {
+  margin-top: 0px;
+  width: 100%;
+  height: 1000px;
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-titulo {
+  margin-top: 70px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.form-text {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-datos {
+  margin-top: 50px;
+  width: 90%;
+}
+.form-group > input,
+textarea {
+  height: 50px;
+}
+/*  fin body */
 
 @media (max-width: 700px) {
   .main {
@@ -171,9 +270,32 @@ body {
   .informaci > img {
     width: 100%;
   }
-}
+  .info-footer-text {
+    font-size: 6vw;
+  }
+  .info-footer-tiempo > div {
+    margin: 5px;
+  }
+  .numero {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+  }
 
-/*  fin body */
+  .tiempo > span {
+    font-size: 15px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form-titulo {
+    font-size: 15px;
+  }
+  .form-text {
+    font-size: 15px;
+  }
+}
 
 @supports (object-fit: cover) {
   .header img {
@@ -231,6 +353,7 @@ body {
   font-style: normal;
   font-weight: normal;
   visibility: visible;
+  color: white;
 }
 
 .celebracion {
