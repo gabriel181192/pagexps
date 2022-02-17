@@ -3,6 +3,11 @@ body {
   margin: 0px;
 }
 
+@font-face {
+  font-family: "bod72w";
+  src: url("/bod72w.ttf") format("truetype");
+}
+
 .main {
   width: 70%;
   height: auto;
@@ -10,22 +15,165 @@ body {
   margin: 0px auto;
 }
 
+/*  header */
 .header {
   width: 100%;
-  height: auto;
-  margin-bottom: 300px;
 }
 
 .header img {
   width: 100%;
   height: 100%;
 }
+/*  fin header */
 
-@media (max-width: 600px) {
+/*  body */
+.body {
+  width: 100%;
+  height: 3000px;
+  background-image: url(../images/body.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Franja*/
+.franga-negra {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.franga-negra > div {
+  width: 60%;
+  height: 30px;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+/*Franja*/
+
+/*Programa*/
+.programa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+.programa-img > img {
+  width: 100px;
+  height: 100px;
+}
+
+.programa-text > h2 {
+  font-family: "Gideon Roman", cursive;
+  opacity: 0.8;
+  color: rgb(88, 88, 88);
+  font-size: 50px;
+  letter-spacing: 7px;
+}
+/*Programa*/
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+.main-content-img > img {
+  width: 100px;
+  height: 100px;
+}
+.main-content-title > h2 {
+  font-weight: bold;
+  margin-bottom: -20px;
+  font-size: 50px;
+  letter-spacing: 7px;
+}
+.main-content-text > p {
+  text-align: center;
+  font-size: 30px;
+}
+.main-content-btn {
+  margin-top: 10px;
+}
+
+.main-content-btn > button {
+  background-color: rgb(60, 100, 52);
+  opacity: 0.8;
+  width: 200px;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*Ceremonia*/
+.ceremonia {
+  margin-top: 15px;
+}
+
+/*Recepcion*/
+.recepcion {
+  margin-top: 40px;
+}
+/*INFOR*/
+.informaci {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.informaci > img {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
   .main {
     width: 100%;
   }
+  .programa {
+    margin-top: 30px;
+  }
+  .programa-img > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .programa-text > h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  .main-content-img > img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-content-title > h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+  }
+  .main-content-text > p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .informaci > img {
+    width: 100%;
+  }
 }
+
+/*  fin body */
 
 @supports (object-fit: cover) {
   .header img {
@@ -121,14 +269,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.franga-negra > div {
-  width: 400px;
-  height: 30px;
-  background-color: black;
-  border-radius: 10px;
-  opacity: 0.8;
 }
 
 .image-flor {
