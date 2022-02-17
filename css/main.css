@@ -10,7 +10,7 @@ body {
 
 .main {
   width: 70%;
-  height: 5000px;
+  height: 4000px;
   background-color: white;
   margin: 0px auto;
 }
@@ -289,11 +289,11 @@ textarea {
   .form {
     width: 100%;
   }
-  .form-titulo {
-    font-size: 15px;
+  .form-titulo > h1 {
+    font-size: 30px;
   }
-  .form-text {
-    font-size: 15px;
+  .form-text > h3 {
+    font-size: 20px;
   }
 }
 
